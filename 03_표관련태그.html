@@ -5,6 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>표 관련 태그</title>
+    <!-- CSS 영역 : STYLE태그로 지정 -->
+    <style>
+        /* css 영역의 주석 : HTML 주석이 먹히지 않음 */
+        /* id ="tt" */
+        #tt{
+            background-color: rgb(192, 249, 255);
+        }
+        /* thead태그(모든 thead)에 css 적용 */
+        thead{
+            background-color: rgba(0, 255, 221, 0.6); /*배경색*/
+            color: white; /*글자색*/
+        }
+
+        tfoot{
+            background-color: rgb(221, 224, 43);
+            color: rgba(93, 0, 255, 0.802);
+        }
+
+        h2{
+            color: pink;
+        }
+
+
+    </style>
 </head>
 <body>
     <!-- 
@@ -75,7 +99,6 @@
     </table>
 
     <hr>
-
     <h2>테이블 내에 구조 나누기</h2>
 
     <table border="1">
@@ -86,7 +109,7 @@
                 <th>주소</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="tt">
             <tr>
                 <td>홍길동</td>
                 <td>23</td>
