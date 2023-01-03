@@ -9,7 +9,7 @@
 <body>
     <fieldset>
         <legend>회원가입 동의서</legend>
-        이용약관 동의(필수)
+        <label>이용약관 동의(필수)</label>
         <br>
         <textarea cols="50" rows="8">
 여러분을 환영합니다.
@@ -24,7 +24,7 @@
 
         <br>
 
-        개인정보 수집 및 이용 동의(필수)
+        <label>개인정보 수집 및 이용 동의(필수)</label> 
         <br>
         <textarea cols="50" rows="8">
 개인정보보호법에 따라 네이버에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간, 동의 거부권 및 동의 거부 시 불이익에 관한 사항을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
@@ -50,28 +50,28 @@
 
     <fieldset>
         <legend>회원가입 양식</legend>
-        * 아이디
+        <label>*아이디</label>
         <br>
         <input type="text" size="48px" name="userId"  placeholder="영문 소문자, 숫자, 특수기호(_,-) 5~20" maxlength="20" required> 
         <button>아이디 중복확인</button>
         <br><br>
-        *비밀번호
+        <label>*비밀번호</label>
         <br>
         <input type="password" size="48px" name="userpassword"  placeholder="영문, 숫자, 특수문자 8~15" maxlength="15" required>
         <br><br>
-        *비밀번호 재확인
+        <label>*비밀번호 재확인</label>
         <br>
         <input type="password" size="48px" name="passwordcheck"  placeholder="영문, 숫자, 특수문자 8~15" maxlength="15" required>
         <br><br>
-        *이름
+        <label>*이름</label>
         <br>
         <input type="text" size="48px" name="userName"  maxlength="10" required> 
         <br><br>
-        *주민등록번호
+        <label>*주민등록번호</label>
         <br>
         <input type="text" name="userNum" maxlength ="6" required> - <input type="password" name="userNum" maxlength="7" required>
         <br><br>
-        *성별
+        <label>*주민등록번호</label>
         <br>
         <input type="radio" id="genNone" name="gender" checked>
         <label for="genNone">선택안함</label>
@@ -80,38 +80,38 @@
         <input type="radio" name="gender">
         <label for="genF">여자</label>
         <br><br>
-        *생년월일
+        <label>*생년월일</label>
         <br>
         <input type="date">
         <br><br>
-        *주소
+        <label>주소</label>
         <br>
-        <input type="text" size="48px" name="address" maxlength="40" required>
+        <input type="text" size="48px" name="address" maxlength="40">
         <br><br>
-        *우편번호
+        <label>우편번호</label>
         <br>
-        <input type="text" size="48" name="addressNum" maxlength="40"required>
+        <input type="text" size="33" name="addressNum" maxlength="40">
         <button>우편번호찾기</button>
         <input type="checkbox" id="mail" name="mail">
         <label for="mail">우편 수신 동의</label>
         <br><br>
-        *이메일
+        <label>이메일</label>
         <br>
-        <input type="email" size="48px" name="Email" maxlength="40"required>
+        <input type="email" size="48px" name="Email" maxlength="40">
         <input type="checkbox" id="email" name="email">
         <label for="email">이메일 수신 동의</label>
         <br><br>
-        *휴대폰번호
+        <label>휴대폰번호</label>
         <br>
         <select name="phonenum1">
-            <option value="010">010</option>
+            <option selected value="010">010</option>
             <option value="011">011</option>
             <option value="018">018</option>
         </select>
         -
-        <input type="text" size="15" name="phonenum" maxlength="4" required>
+        <input type="text" size="15" name="phonenum" maxlength="4">
         -
-        <input type="text" size="15" name="phonenum" maxlength="4" required>
+        <input type="text" size="15" name="phonenum" maxlength="4">
         <input type="checkbox" id="sms" name="sms">
         <label for="sms">문자 수신 동의</label>
 
@@ -119,17 +119,6 @@
 
         <button type="reset">초기화</button>
         <button type="submit">가입하기</button>
-
-
-        
-
-
-
-
-
-
-
-
     </fieldset>
 </body>
 </html>
