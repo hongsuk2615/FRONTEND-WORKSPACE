@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>기타선택자_CSS</title>
     <link href="resources\css\stylesheet.css" rel="stylesheet">
     <!-- 외부스타일 방식 : 스타일 정보만을 따로 관리하는 
         css외부문서를 만들고, link를 통해 연결시켜주는 방법
     -->
 </head>
+
 <body>
 
     <h2>1. 속성 선택자</h2>
@@ -26,12 +28,12 @@
         선택자[속성$=속성값]{}
         선택자[속성*=속성값]{}
     </pre>
-
+    <div class="div div-class" name="name">div</div>
     <div class="div-class" name="name1">div1</div>
     <div class="div-class" name="name2">div2</div>
     <div class="div-class" name="name3 name1">div3</div>
     <div class="class-div" name="name4">div4</div>
-    
+
     <hr>
 
     <h2>2. 자손선택자와 후손선택자</h2>
@@ -54,7 +56,9 @@
         <h4>div의 자손이면서 후손이기도 합니다.</h4>
         <h4>div의 자손이면서 후손이기도 합니다.</h4>
         <ul>div의 자손이면서 후손이기도 합니다.
-            <li><h4>li의 자손이면서 div의 후손입니다.</h4></li>
+            <li>
+                <h4>li의 자손이면서 div의 후손입니다.</h4>
+            </li>
             <li>ul태그의 자손이면서 div의 후손입니다.</li>
             <li>ul태그의 자손이면서 div의 후손입니다.</li>
         </ul>
@@ -73,11 +77,102 @@
 
         }
     </pre>
-    <div id="test2">div1</div>
+    <div id="test1" class="test22">div1</div>
     <div>div2</div>
     <div>div3</div>
     <div>div4</div>
-    <ul>ul요소</ul>
+    <div>
+        <ul>ul요소
+            <li>
+                <ul></ul>
+            </li>
+        </ul>
+    </div>
+
     <div>안녕</div>
+
+    <h2>4. 반응 선택자</h2>
+    <p>
+        사용자의 움직임에 따라 선택이 되거나 안되는 선택자
+    </p>
+    <pre>
+        * 해당 요소에 클릭이 되었을 경우 스타일 부여
+        선택자:active{
+            스타일 속성 : 값;
+        }
+        * 해당 요소에 마우스가 올라가는 순간 스타일 부여
+        선택자:hover{
+            스타일 속성 : 값;
+        }
+    </pre>
+    <div id="active-test" class="area">active 테스트</div>
+    <br>
+    <div id="hover-test" class="area">hover 테스트</div>
+
+    <h2>5. 상태 선택자</h2>
+    <p>
+        요소의 상태에 따라서 선택되는 선택자
+    </p>
+    <pre>
+        1) 체크된(checked) 상태의 요소
+        선택자:checked{
+            속성 : 속성값;
+        }
+
+    </pre>
+    <input type="checkbox" id="apple">
+    <label for="apple">사과</label>
+    <input type="checkbox" id="banana">
+    <label for="banana">바나나</label>
+    <input type="checkbox" id="kiwi">
+    <label for="kiwi">키위</label>
+    <br>
+    
+    <pre>
+        2) 초점(focus) 이 맞춰진 input 요소 선택
+        선택자: focus{
+            스타일 속성 : 값;
+        }
+    </pre>
+
+    아이디 :
+    <input type="text" name="userId" placeholder="아이디를 입력" required>
+    <br>
+    비밀번호 :
+    <input type="password" name="userPwd" maxlength="15" required>
+    <br>
+    
+    <pre>
+        3) 활성화 되어있는 요소들 선택
+        선택자 : enabled{
+            속성 : 값;
+        }
+
+        4) 비활성화 되어있는 요소들 선택
+        선택자 : disabled{
+            속성 : 값;
+        }
+    </pre>
+    <br>
+
+    <button>클릭가능</button>
+    <button disabled>클릭불가능</button>
+
+    <!--
+        에밋 자동완성 문법
+        #area1>h4+p>ul>li*3
+    -->
+    <div id="area1">
+        <h4></h4>
+        <p>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </p>
+    </div>
+
 </body>
+
 </html>
