@@ -2,28 +2,30 @@
 
 /*오버워치 폰트*/
 body {
-    font-family: 'Koverwatch';
+    font-family: 'Koverwatch', Koverwatch;
     box-sizing: border-box;
 }
 
 .login, .back {
-    width: 240px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
    
-    /* background-image: url(../sourcefiles/image/겐지이미지.jfif); */
+    background-image: url(../sourcefiles/image/완성.gif);
     background-color: rgb(173, 82, 21);
     background-position: center;
-    background-size: 240px 120px;  
-
-    border-radius: 15px;
-    border-width: 1px;
+    background-size: 500px 350px;  
+    border-radius: 200px;
+    
+    border-width: 0.001px;
     border-style: solid;
-    border-color: rgb(173, 82, 21);
+    border-color: #1557ad;
 
 }
 
 .login>.text{
-    color: white;
+    margin-top: 60px;
+    
+    color: rgb(243, 200, 6);
     font-size: 35px;
     text-decoration-thickness: bold;
     text-shadow: 2px 2px 3px rgba(32, 31, 31, 0.822);
@@ -34,14 +36,14 @@ body {
 .login:hover {
 
     cursor: pointer;
-    background-image: url(../sourcefiles/image/겐지움짤.gif);
+    background-image: url(../sourcefiles/image/플레이버튼대비.gif);
     background-position: center;
-    background-size: 240px 120px;
+    background-size: 500px 350px; 
     transition-duration: 2s;
 }
 .login:hover>.text{
     font-size: 36px;
-    color: rgb(243, 200, 6);
+    color:  white;
 }
 .test{
     width:100%;
