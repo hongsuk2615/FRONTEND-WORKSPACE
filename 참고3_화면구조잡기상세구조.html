@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>화면구조잡기상세구조</title>
+    <style>
+        div {
+            border: 1px solid forestgreen;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            height: 800px;
+            width: 95%;
+            margin: auto;
+        }
+
+        .wrap>div {
+            width: 100%;
+        }
+
+        #header {
+            height: 15%;
+            display: flex;
+        }
+
+        #header>div,
+        #content>div {height: 100%; }
+
+        #header_1 { width: 20%; }
+
+        #header_2 {
+            width: 65%
+        }
+
+        #header_3 {
+            width: 15%;
+        }
+
+        #nav-bar {
+            height: 6%;
+        }
+
+        #content {
+            height: 64%;
+            display: flex;
+        }
+
+        #content_1 {
+            width: 15%;
+        }
+
+        #content_2 {
+            width: 60%
+        }
+
+        #content_3 {
+            width: 25%
+        }
+
+        #footer {
+            height: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="header">
+            <div id="header_1"></div>
+            <div id="header_2"></div>
+            <div id="header_3"></div>
+        </div>
+        <div id="nav-bar">
+            
+        </div>
+        <div id="content">
+            <div id="content_1"></div>
+            <div id="content_2"></div>
+            <div id="content_3"></div>
+        </div>
+        <div id="footer">
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

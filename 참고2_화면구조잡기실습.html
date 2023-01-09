@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            box-sizing: border-box;            
+            /*테두리영역까지 포함 width, height설정*/
+            border: 1px solid goldenrod;
+        }
+
+        .wrap {
+            height: 900px;
+            width: 100%;
+        }
+
+        .wrap>div {
+            width: 100%;
+        }
+
+        #header{
+            height: 17%;
+            display: flex;
+        }
+        #footer {
+            height: 13%;
+            display: flex;
+        }
+        #content {
+            height: 70%;
+            display: flex;
+        }
+        #header>div,
+        #footer>div,
+        #content>div {
+            height: 100%;
+        }
+        #left-header {
+            width: 30%;
+        }
+
+        #right-header {
+            width: 70%
+        }
+        #left-content{
+            width: 15%;
+        }
+        #center-content{
+            width: 65%;
+        }
+        #right-content{
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div id="header">
+            <div id="left-header"></div>
+            <div id="right-header"></div>
+        </div>
+        <div id="content">
+            <div id="left-content"></div>
+            <div id="center-content"></div>
+            <div id="right-content"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+
+</body>
+
+</html>

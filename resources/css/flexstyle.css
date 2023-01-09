@@ -42,7 +42,7 @@ div {
 }
 
 .flex-wrap-test {
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
 }
 
 .flex-flow-test {
@@ -52,8 +52,9 @@ div {
 }
 
 .align-content-test {
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-items: space-between;
+    /* align-items: space-between; */
+    align-content: center;
     height : 300px;
 }
