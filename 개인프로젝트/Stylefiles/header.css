@@ -4,17 +4,43 @@
 }
 #header1{
     width: 107px;
+    height: 100%;
     cursor: pointer;
 }
 #header1>div{
     height: 100%;
-    color: white;
+    color: transparent;
     font-size: 16px;
     text-align: center;
     padding: 18px;
 }
 #header1>div:hover{
     color: grey;
+}
+.menu-background{
+    width: 400px;
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0%;
+
+    z-index: -10;
+}
+.menu-background:hover{
+    visibility: visible;
+    z-index: 30;
+}
+
+#header1:focus+.menu-background{
+    visibility: visible; 
+    opacity: 100%;
+    z-index: 30;
+
 }
 #header2{
     width :200px;

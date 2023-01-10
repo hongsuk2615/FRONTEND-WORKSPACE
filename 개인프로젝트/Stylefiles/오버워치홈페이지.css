@@ -1,4 +1,5 @@
 @font-face {font-family: "Koverwatch";
+    src: url("../sourcefiles/fonts/Koverwatch/Regular.ttf");
     src: url("http://db.onlinewebfonts.com/t/1f00b50091b5a28cccf7b552ceefc8cd.eot"); /* IE9*/
     src: url("http://db.onlinewebfonts.com/t/1f00b50091b5a28cccf7b552ceefc8cd.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("http://db.onlinewebfonts.com/t/1f00b50091b5a28cccf7b552ceefc8cd.woff2") format("woff2"), /* chrome firefox */

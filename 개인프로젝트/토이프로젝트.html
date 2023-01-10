@@ -18,10 +18,16 @@
             padding: 0;
             overflow-x: hidden;
         }
+        body *{
+            /* background-color: white !important;
+            background-image: none !important;
+            border: 1px solid royalblue !important;
+            color: white !important; */ 
+            /*레이아웃 확인용*/
+        }
 
         div {
-            box-sizing: border-box;
-            /* border: 1px solid royalblue !important; */
+            box-sizing: border-box;    
         }
 
         a {
@@ -31,6 +37,7 @@
 
         #wrap {
             width: 100%;
+            max-width: 1920px;
             min-width: 1124px;
         }
 
@@ -66,9 +73,10 @@
     <div id="wrap">
 
         <div id="header" class="bg-color-dark flex">
-            <div id="header1"><!--메뉴버튼-->
+            <input type="button" id="header1"><!--메뉴버튼-->
+                <div class="menu-background"></div>
                 <div class="ovfont"> 메뉴 </div>
-            </div>
+            
             <div id="header2"><!--블리자드로고-->
             </div>
             <div id="header3"><!--로그인/회원가입-->
@@ -80,12 +88,13 @@
 
         <div id="main-content">
             <video src="sourcefiles/videos/y2mate.com - 오버워치 2 런칭 트레일러  10월 5일 무료 플레이_1080pFHR.mp4" autoplay="true"
-                muted="true"></video>
+                muted="true" loop="true"></video>
             <div id="main-content1"> <!--오버워치로고 / navbar-->
                 <div class="content-box flex">
                     <div class="overwatch-logo"></div>
                     <div class="nav-bar">
                         <ul class="ovfont">
+                            <div class="nav-bar-background"></div>
                             <li>
                                 <a href="">게임정보</a>
                                 <ul>
@@ -117,27 +126,37 @@
             <div id="main-content3"><!--밑 배너-->
                 <div class="content-box ovfont pos-rel">
                     <input type="radio" name="banner-select" id="banner-selet1" class="img1" checked>
-                    <div class="main-banner-img img1"></div>
+                    <div class="main-banner-img img1 z-index-img">
+                        <div class="main-banner-text"> 라벨1 이미지 입니다.</div>
+                    </div>
                     <label for="banner-selet1">
                         <div>라벨1</div>
                     </label>
                     <input type="radio" name="banner-select" id="banner-selet2" class="img2">
-                    <div class="main-banner-img img2"></div>
+                    <div class="main-banner-img img2 z-index-img">
+                        <div class="main-banner-text"> 라벨2 이미지 입니다.</div>
+                    </div>
                     <label for="banner-selet2">
                         <div>라벨2</div>
                     </label>
                     <input type="radio" name="banner-select" id="banner-selet3" class="img3">
-                    <div class="main-banner-img img3"></div>
+                    <div class="main-banner-img img3 z-index-img">
+                        <div class="main-banner-text"> 라벨3 이미지 입니다.</div>
+                    </div>
                     <label for="banner-selet3">
                         <div>라벨3</div>
                     </label>
                     <input type="radio" name="banner-select" id="banner-selet4" class="img4">
-                    <div class="main-banner-img img4"></div>
+                    <div class="main-banner-img img4 z-index-img">
+                        <div class="main-banner-text"> 라벨4 이미지 입니다.</div>
+                    </div>
                     <label for="banner-selet4">
                         <div>라벨4</div>
                     </label>
                     <input type="radio" name="banner-select" id="banner-selet5" class="img5">
-                    <div class="main-banner-img img5"></div>
+                    <div class="main-banner-img img5 z-index-img">
+                        <div class="main-banner-text"> 라벨5 이미지 입니다.</div>
+                    </div>
                     <label for="banner-selet5">
                         <div>라벨5</div>
                     </label>
@@ -160,6 +179,7 @@
                 </div>
                 <div id="main-banner2"><!--게임시작 버튼-->
                     <div class="ovfont">Game Start</div>
+                    <div class="play-hover-background"></div>
                 </div>
                 <div id="main-banner3"><!--로그인/회원가입-->
                     <div class="login-top">
@@ -252,7 +272,7 @@
         </div><!--board end-->
 
         <div id="footer" class="bg-color-dark">
-
+             
 
 
         </div><!--footer end-->

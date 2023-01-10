@@ -17,6 +17,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 
@@ -27,6 +28,9 @@
     background-color: white;
     display: flex;
     justify-content: space-around;
+}
+.guide-1, .guide-2{
+    cursor: pointer;
 }
 .notice{
     width: 507px;
@@ -132,6 +136,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }   
 #board4{
     width: 806px;
@@ -147,7 +152,4 @@
     padding: 27px 0px;
     text-align: center;
     color: white;
-}
-#board4>a:hover{
-    color: rgb(241, 116, 43);
 }

@@ -10,6 +10,7 @@
     position: absolute;
     width: 100%;
     z-index: -10;
+    top: -160px;
 }
 
 #main-content1 {
@@ -23,6 +24,10 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
+}
+.overwatch-logo:hover{
+    opacity: 90%;
 }
 
 .nav-bar {
@@ -62,12 +67,34 @@
     text-align: center;
 }
 
-.nav-bar>ul>li:hover>ul {
+.nav-bar>ul:hover li ul {
     display: block;
 }
 
 .nav-bar>ul>li>ul>li {
     height: 25px;
+}
+.nav-bar>ul{
+    position: relative;
+}
+.nav-bar-background{
+    z-index: -1;
+    height: 270px;
+    width: 1920px;
+    background-color: #2b2b37;
+    opacity: 20%;
+    position: absolute;
+    top: -50px;
+    left: -480px;
+    visibility: hidden;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+.nav-bar>ul:hover>.nav-bar-background{
+    visibility: visible;
+    opacity: 100%;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
 
 #main-content2 {
@@ -130,11 +157,10 @@
     transition-duration: 0.2s;
     opacity: 100%;
 }
-#main-content3 input[type="radio"]:checked+div{    
-    opacity: 90%;
-    width: 1200px;
-    height: 330px;
-    transition-duration: 0.5s;
+#main-content3 input[type="radio"]:checked+div{  
+    opacity: 100%;  
+    visibility : visible;
+    transition-duration: 1s;
     transition-timing-function: ease-out;
 }
 
@@ -143,17 +169,15 @@
 }
 
 .main-banner-img {
-    width: 0;
-    height: 0;
-    
+    width: 1200px;
+    height: 330px;
     position: absolute;
-    z-index: 99;
     top: -330px;
-    opacity: 0%;
+    visibility: hidden;
 }
 
 .img1 {
-    background-image: url("../sourcefiles/image/트레이서.jpg");
+    background-image: url("../sourcefiles/image/메인배너1.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -161,7 +185,7 @@
 }
 
 .img2 {
-    background-image: url("../sourcefiles/image/리퍼.gif");
+    background-image: url("../sourcefiles/image/메인베너2.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -169,7 +193,7 @@
 }
 
 .img3 {
-    background-image: url("../sourcefiles/image/메이움짤.gif");
+    background-image: url("../sourcefiles/image/메인베너3.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -178,7 +202,7 @@
 }
 
 .img4 {
-    background-image: url("../sourcefiles/image/트레이서움짤.gif");
+    background-image: url("../sourcefiles/image/메인베너4.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -187,10 +211,17 @@
 }
 
 .img5 {
-    background-image: url("../sourcefiles/image/겐지용검.gif");
+    background-image: url("../sourcefiles/image/메인베너5.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 50%;
 
+}
+.z-index-img{
+    z-index: -8;
+}
+.main-banner-text{
+    font-size: 35px;
+    color: white;
 }

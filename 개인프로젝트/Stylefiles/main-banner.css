@@ -10,6 +10,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 10;
+}
+#main-banner1 *{
+    z-index: 10;
 }
 .update-icon{
     width: 144px;
@@ -44,23 +48,55 @@
 #main-banner2{
     width: 180px;
     height: 100%;
-    background-image: url("../sourcefiles/image/검은색플레이버튼.gif");
-    background-position: center;
-    background-size: cover;
     cursor: pointer;
     display: flex;
     align-items: center;
+    position: relative;
 }
-#main-banner2>div{
+#main-banner2:hover>.ovfont{
+    background-image: url("../sourcefiles/image/파란색로고빠른버전.gif");
+    z-index: 10;
+    font-size: 25px;
+    color: rgb(241, 172, 43);
+    text-shadow: 2px 2px 1px black;
+}
+#main-banner2>.play-hover-background{
+    width: 180px;
+    height: 100%;
+    background-color: rgb(4, 64, 112);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+#main-banner2:hover>.ovfont+.play-hover-background{
+    left: -880px;
+    width: 1920px;
+    z-index: 2;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+#main-banner2>.ovfont{
+    padding: 75px 0px;
     font-size: 25px;
     width: 100%;
+    height: 100%;
+    background-image: url("../sourcefiles/image/검은색플레이버튼.gif");
+    background-position: center;
+    background-size: cover;
     text-align: center;
     color: black;
     text-shadow: 2px 2px 2px white;
+    z-index: 10;
 }
 #main-banner3{
     width: 436px;
-    height: 110px;    
+    height: 110px; 
+    z-index: 10;   
+}
+#main-banner3 *{
+    z-index: 10;
 }
 #main-banner3 a{
     font-family: 'Koverwatch';
