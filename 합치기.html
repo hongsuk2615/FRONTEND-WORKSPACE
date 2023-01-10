@@ -88,6 +88,7 @@
                     <div id="search_btn">
                         <input type="submit" value="검색">
                     </div>
+                </form>
             </div>
             <div id="header_3"></div>
         </div>
@@ -128,21 +129,18 @@
             <div id="content_3">
                 <!--전체내용을 감싸는 div-->
                 <div id="login_form">
-                    <form action="">
-                        <div class="login_form_input">
-                            <!--2_1. 입력을 받는  input요소들이 위치할 form 영역-->
-
-                            <div id="login_input_id_pwd">
-
-                                <!--3_1. form태그 안쪽에서 왼쪽에 위치함.-->
-                                <input type="text" name="userId" placeholder="아이디 입력" required><br>
-                                <input type="password" name="userPwd" placeholder="비밀번호 입력" required>
-                            </div>
-                            <div id="login_input_btn">
-                                <!--로그인버튼이 위치할 영역-->
-                                <input type="submit" value="로그인">
-                            </div>
+                    <form action="" id="login_form_input">
+                        <!--2_1. 입력을 받는  input요소들이 위치할 form 영역-->
+                        <div id="login_input_id_pwd">
+                            <!--3_1. form태그 안쪽에서 왼쪽에 위치함.-->
+                            <input type="text" name="userId" placeholder="아이디 입력" required><br>
+                            <input type="password" name="userPwd" placeholder="비밀번호 입력" required>
                         </div>
+                        <div id="login_input_btn">
+                            <!--로그인버튼이 위치할 영역-->
+                            <input type="submit" value="로그인">
+                        </div>
+
                     </form>
                     <div id="login_form_etc">
                         <!--2_2. 회원가입, ID/PWD를 찾기위한 요청기능.(a태그로 작성)-->

@@ -1,0 +1,21 @@
+#board{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#board1{
+    width: 380px;
+    height: 320px;
+}
+#board2{
+    width: 806px;
+    height: 320px;
+}
+#board3{
+    width: 380px;
+    height: 74px;
+}
+#board4{
+    width: 806px;
+    height: 74px;
+}

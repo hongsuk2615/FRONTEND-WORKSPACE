@@ -24,7 +24,7 @@ div {
     margin: 0;
     /*p태그 기본 마진값없애기*/
     box-sizing: border-box;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 #p1 {

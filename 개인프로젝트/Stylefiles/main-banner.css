@@ -1,0 +1,17 @@
+#main-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#main-banner1{
+    width: 450px;
+    height: 174px;
+}
+#main-banner2{
+    width: 180px;
+    height: 100%;
+}
+#main-banner3{
+    width: 436px;
+    height: 110px;    
+}
