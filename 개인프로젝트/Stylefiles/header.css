@@ -1,0 +1,59 @@
+#header>div{
+    height: 100%;
+    
+}
+#header1{
+    width: 107px;
+    cursor: pointer;
+}
+#header1>div{
+    height: 100%;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 18px;
+}
+#header1>div:hover{
+    color: grey;
+}
+#header2{
+    width :200px;
+    background-image: url(../sourcefiles/image/blizzardLogo.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0px 20px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+#header2:hover{
+    filter: brightness(130%);
+}
+#header3{
+    width: 241.64px;
+    padding: 18px;
+    display: flex;
+    justify-content: space-around;
+}
+.make-id-box{
+    margin-top: 5px;
+    font-size: 14px;
+    color: white;
+}
+.make-id-box:hover{
+    color: grey;
+}
+.login-box{
+    font-size: 16px;
+    color: white;
+    width: 105px;
+    height: 23px;
+    padding-top: 2px;
+    text-align: center;
+    border: 1px solid;
+    border-color: white;
+    border-radius: 30px;
+}
+.login-box:hover{
+    color: grey;
+}

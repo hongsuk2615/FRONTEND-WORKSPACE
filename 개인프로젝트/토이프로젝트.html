@@ -21,7 +21,7 @@
 
         div {
             box-sizing: border-box;
-            border: 1px solid royalblue;
+            /* border: 1px solid royalblue !important; */
         }
 
         a {
@@ -65,23 +65,49 @@
 <body>
     <div id="wrap">
 
-        <div id="header" class="bg-color-dark">
+        <div id="header" class="bg-color-dark flex">
             <div id="header1"><!--메뉴버튼-->
-
+                <div class="ovfont"> 메뉴 </div>
             </div>
             <div id="header2"><!--블리자드로고-->
-
             </div>
             <div id="header3"><!--로그인/회원가입-->
-
+                <a href="" class="ovfont make-id-box">블리자드 회원가입</a>
+                <a href="" class="ovfont login-box">블리자드 로그인</a>
             </div>
         </div> <!--header end-->
 
 
         <div id="main-content">
+            <video src="sourcefiles/videos/y2mate.com - 오버워치 2 런칭 트레일러  10월 5일 무료 플레이_1080pFHR.mp4" autoplay="true"
+                muted="true"></video>
             <div id="main-content1"> <!--오버워치로고 / navbar-->
                 <div class="content-box flex">
-
+                    <div class="overwatch-logo"></div>
+                    <div class="nav-bar">
+                        <ul class="ovfont">
+                            <li>
+                                <a href="">게임정보</a>
+                                <ul>
+                                    <li><a href="">개요</a></li>
+                                    <li><a href="">자료실</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">영웅</a></li>
+                            <li><a href="">시즌</a></li>
+                            <li><a href="">새소식</a></li>
+                            <li>
+                                <a href="">커뮤니티</a>
+                                <ul>
+                                    <li><a href="">토론장</a></li>
+                                    <li><a href="">오버워치 리그</a></li>
+                                    <li><a href="">컨덴더스</a></li>
+                                    <li><a href="">오픈 디비전 코리아</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">샵</a></li>
+                        </ul>
+                    </div>
 
                 </div>
             </div>
@@ -89,25 +115,73 @@
 
             </div>
             <div id="main-content3"><!--밑 배너-->
-                <div class="content-box">
-                    <input type="radio" name="banner-select" checked>
-                    <input type="radio" name="banner-select">
-                    <input type="radio" name="banner-select">
-                    <input type="radio" name="banner-select">
+                <div class="content-box ovfont pos-rel">
+                    <input type="radio" name="banner-select" id="banner-selet1" class="img1" checked>
+                    <div class="main-banner-img img1"></div>
+                    <label for="banner-selet1">
+                        <div>라벨1</div>
+                    </label>
+                    <input type="radio" name="banner-select" id="banner-selet2" class="img2">
+                    <div class="main-banner-img img2"></div>
+                    <label for="banner-selet2">
+                        <div>라벨2</div>
+                    </label>
+                    <input type="radio" name="banner-select" id="banner-selet3" class="img3">
+                    <div class="main-banner-img img3"></div>
+                    <label for="banner-selet3">
+                        <div>라벨3</div>
+                    </label>
+                    <input type="radio" name="banner-select" id="banner-selet4" class="img4">
+                    <div class="main-banner-img img4"></div>
+                    <label for="banner-selet4">
+                        <div>라벨4</div>
+                    </label>
+                    <input type="radio" name="banner-select" id="banner-selet5" class="img5">
+                    <div class="main-banner-img img5"></div>
+                    <label for="banner-selet5">
+                        <div>라벨5</div>
+                    </label>
                 </div>
 
             </div>
         </div><!--main-content end-->
 
-        <div id="main-banner">
+        <div id="main-banner" class="bg-color-dark">
             <div class="content-box flex">
                 <div id="main-banner1"><!--업데이트 정보센터-->
+                    <div class="update-icon"></div>
+                    <div class="ovfont update-text">
+                        <a href="">
+                            <div class="update-text1">업데이트 정보센터</div>
+                            <div class="update-text2">2022.12.22 / ver.1.2.372 업데이트 미리보기</div>
+                        </a>
 
+                    </div>
                 </div>
                 <div id="main-banner2"><!--게임시작 버튼-->
-
+                    <div class="ovfont">Game Start</div>
                 </div>
                 <div id="main-banner3"><!--로그인/회원가입-->
+                    <div class="login-top">
+                        <div class="blizzard-login">
+                            <a href="">블리자드 로그인</a>
+                        </div>
+                        <div class="steam-login">
+                            <a href="">스팀 로그인</a>
+                        </div>
+                    </div>
+                    <div class="login-center">
+                        <div class="qr-login">
+                            <a href="">qr 로그인</a>
+                        </div>
+                        <div class="others-login">
+                            <a href="">다른계정 간편 로그인</a>
+                        </div>
+                    </div>
+                    <div class="login-bottom">
+                        <a href="">회원가입</a> | 
+                        <a href="">이메일ID전환</a>
+                    </div>
 
                 </div>
             </div>
@@ -115,58 +189,73 @@
         </div><!--main-banner end-->
 
         <div id="board">
-            <div class="content-box flex">
-                <div id="board1">
+            <div class="content-box flex1">
+                <div class="content-box1 flex">
+                    <div id="board1">
 
+                    </div>
+                    <div id="board2">
+                        <div class="notice">
+                            <div class="main-notice">
+                                <div class="main-notice-symbol ovfont">공지</div>
+                                <a href="" class="ovfont notice-text">
+                                    <div>메인 공지 입니다.</div>
+                                    <div class="main-notice-content">메인 공지 내용입니다.</div>
+                                </a>
+                                
+                            </div>
+                            <div class="notice-others">
+                                <div class="notice-symbol ovfont ">공지</div>
+                                <a href="" class="ovfont notice-text">
+                                    <div>기타 공지 입니다.</div>    
+                                </a>
+                            </div>
+                            <div class="notice-others">
+                                <div class="notice-symbol ovfont">공지</div>
+                                <a href="" class="ovfont notice-text">
+                                    <div>기타 공지 입니다.</div>    
+                                </a>
+                            </div>
+                            <div class="notice-others">
+                                <div class="notice-symbol ovfont">공지</div>
+                                <a href="" class="ovfont notice-text">
+                                    <div>기타 공지 입니다.</div>    
+                                </a>
+                            </div>
+                            <div class="notice-others-last">
+                                <div class="notice-symbol ovfont">공지</div>
+                                 <a href="" class="ovfont notice-text">
+                                    <div>기타 공지 입니다.</div>    
+                                </a>
+                            </div>
+                        </div>
+                        <div class="guide">
+                            <div class="guide-1"></div>
+                            <div class="guide-2"></div>
+                        </div>
+                    </div>
                 </div>
-                <div id="board2">
-    
+                <div class="content-box2 flex">
+                    <div id="board3">
+
+                    </div>
+                    <div id="board4" class="ovfont">
+                        <a href="">버그악용/불법 프로그램 신고</a>
+                        <a href="">프리미엄PC방 혜택 보기</a>
+                        <a href="">테스트서버 바로가기</a>
+
+                    </div>
                 </div>
-                <div id="board3">
-    
-                </div>
-                <div id="board4">
-    
-                </div>
+
             </div>
-            
+
         </div><!--board end-->
 
-        <div id="footer">
+        <div id="footer" class="bg-color-dark">
 
 
 
         </div><!--footer end-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     </div>
