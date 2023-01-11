@@ -12,23 +12,26 @@
 }
 @keyframes changebackground{
     0%{
-
+        background-image: url("../sourcefiles/image/겐.png");
     }25%{
-
+        background-image: url("../sourcefiles/image/트.png");
     }50%{
-
+        background-image: url("../sourcefiles/image/위.png");
     }75%{
-        
+        background-image: url("../sourcefiles/image/한.png");
     }
 }
 #board1{
     width: 380px;
     height: 320px;
-    background-image: url("../sourcefiles/image/트레이서라인하르트.jpg");
+    background-image: url("../sourcefiles/image/겐.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     cursor: pointer;
+    animation-name: changebackground;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
 }
 #board1:hover{
     filter: brightness(120%);

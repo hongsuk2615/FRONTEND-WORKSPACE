@@ -40,3 +40,6 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.pos-rel {
+    position: relative
+}
