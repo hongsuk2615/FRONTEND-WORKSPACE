@@ -135,24 +135,35 @@
     background-color: rgb(241, 116, 43);
     border-radius: 5px;
 }
+.blizzard-login:hover{
+    filter: brightness(110%);
+}
 .steam-login{
     height: 100%;
     width: 214px;
     background-color: #1ea9fb;
     border-radius: 5px;
 }
+.steam-login:hover{
+    filter: brightness(110%);
+}
 .qr-login{
     height: 100%;
     width: 134px;
     background-color: black;
     border-radius: 5px;
-
+}
+.qr-login:hover{
+    background-color: rgb(22, 22, 22);
 }
 .others-login{
     height: 100%;
     width: 298px;
     background-color: black;
     border-radius: 5px;
+}
+.others-login:hover{
+    background-color: rgb(22, 22, 22);
 }
 .login-bottom {
     font-size: 12px;

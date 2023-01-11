@@ -9,6 +9,7 @@
 #main-content>video {
     position: absolute;
     width: 100%;
+    min-width: 1700px;
     z-index: -10;
     top: -160px;
 }
@@ -125,6 +126,9 @@
     text-align: left;
     padding: 0;
 }
+#main-content3 label:hover{
+    color: white;
+}
 
 #main-content3 label>div {
     width: 100%;
@@ -136,6 +140,10 @@
     border-color: white;
     /* background-color: rgba(255, 255, 255, 0.616); */
     transition-duration: 1s;
+    opacity: 100%;
+}
+#main-content3 input[type="radio"]:hover+div+label{
+    color: white;
 }
 
 #main-content3 input[type="radio"]:hover+label {
@@ -222,6 +230,8 @@
     z-index: -8;
 }
 .main-banner-text{
-    font-size: 35px;
+    margin-top: 135px;
+    margin-left: 40px;
+    font-size: 50px;
     color: white;
 }

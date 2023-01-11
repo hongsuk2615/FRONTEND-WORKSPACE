@@ -18,16 +18,18 @@
             padding: 0;
             overflow-x: hidden;
         }
-        body *{
-            /* background-color: white !important;
+
+        body * {
+            /*레이아웃 확인용*/
+            /* background-color: transparent !important;
             background-image: none !important;
             border: 1px solid royalblue !important;
-            color: white !important; */ 
-            /*레이아웃 확인용*/
+            color: white !important;  */
+
         }
 
         div {
-            box-sizing: border-box;    
+            box-sizing: border-box;
         }
 
         a {
@@ -64,7 +66,7 @@
         }
 
         #footer {
-            height: 90px;
+            height: 152px;
         }
     </style>
 </head>
@@ -73,10 +75,99 @@
     <div id="wrap">
 
         <div id="header" class="bg-color-dark flex">
-            <input type="button" id="header1"><!--메뉴버튼-->
-                <div class="menu-background"></div>
-                <div class="ovfont"> 메뉴 </div>
-            
+            <div id="header1"><!--메뉴버튼-->
+
+                <div class="ovfont">
+                    <input type="radio" id="side-menu-on" name="side-menu">
+                    <div class="menu-background ovfont">
+                        <div class="side-menu-gamelist">
+                            <div class="gamelist-title">
+                                <div class="totalgame"><a href="">전체게임</a></div>
+                                <div class="clientcenter"><a href="">고객센터</a></div>
+                            </div>
+                            <div class="gamelist-content">
+                                <div class="gamelist">
+                                    <div>
+                                        <div class="gamelist-alphabet">A - Z</div>
+                                        <div class="gamelist-name">
+                                            <a href="">a a a</a>
+                                            <a href="">b b b</a>
+                                            <a href="">c c c</a>
+                                            <a href="">D D D</a>
+                                            <a href="">E E E</a>
+                                            <a href="">F F F</a>
+                                            <a href="">G G G</a>
+                                            <a href="">H H H</a>
+                                            <a href="">I I I</a>
+                                            <a href="">J J J</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="gamelist-alphabet">ㄱ-ㄹ</div>
+                                        <div class="gamelist-name">
+                                            <a href="">ㄱㄱㄱ</a>
+                                            <a href="">ㄴㄴㄴ</a>
+                                            <a href="">ㄷㄷㄷ</a>
+                                            <a href="">ㄹㄹㄹ</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="gamelist-alphabet">ㅁ-ㅅ</div>
+                                        <div class="gamelist-name">
+                                            <a href="">ㅁㅁㅁ</a>
+                                            <a href="">ㅂㅂㅂ</a>
+                                            <a href="">ㅅㅅㅅ</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gamelist">
+                                    <div>
+                                        <div class="gamelist-alphabet">ㅇ-ㅈ</div>
+                                        <div class="gamelist-name">
+                                            <a href="">ㅇㅇㅇ</a>
+                                            <a href="">ㅈㅈㅈ</a>
+
+
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="gamelist-alphabet">ㅊ-ㅋ</div>
+                                        <div class="gamelist-name">
+                                            <a href="">ㅊㅊㅊ</a>
+                                            <a href="">ㅋㅋㅋ</a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="gamelist-alphabet">ㅌ-ㅎ</div>
+                                        <div class="gamelist-name">
+                                            <a href="">ㅌㅌㅌ</a>
+                                            <a href="">ㅍㅍㅍ</a>
+                                            <a href="">ㅎㅎㅎ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="side-menu-servicelist">
+                            <div><a href="">내정보</a></div>
+                            <div><a href="">이벤트</a></div>
+                            <div><a href="">캐쉬</a></div>
+                            <div><a href="">보안센터</a></div>
+                            <div><a href="">공지사항</a></div>
+                            <div><a href="">아무내용</a></div>
+                            <div><a href="">배틀넷</a></div>
+                            <div><a href="">고객센터</a></div>
+                            <div><a href="">다른계정</a></div>
+                        </div>
+                        <div class="side-menu-totalservice"><a href="">전체 서비스</a></div>
+                    </div>
+                    <input type="radio" id="side-menu-off" name="side-menu" checked>
+                    <label for="side-menu-on">메뉴</label>
+
+                </div>
+            </div>
             <div id="header2"><!--블리자드로고-->
             </div>
             <div id="header3"><!--로그인/회원가입-->
@@ -199,7 +290,7 @@
                         </div>
                     </div>
                     <div class="login-bottom">
-                        <a href="">회원가입</a> | 
+                        <a href="">회원가입</a> |
                         <a href="">이메일ID전환</a>
                     </div>
 
@@ -222,30 +313,30 @@
                                     <div>메인 공지 입니다.</div>
                                     <div class="main-notice-content">메인 공지 내용입니다.</div>
                                 </a>
-                                
+
                             </div>
                             <div class="notice-others">
                                 <div class="notice-symbol ovfont ">공지</div>
                                 <a href="" class="ovfont notice-text">
-                                    <div>기타 공지 입니다.</div>    
+                                    <div>기타 공지 입니다.</div>
                                 </a>
                             </div>
                             <div class="notice-others">
                                 <div class="notice-symbol ovfont">공지</div>
                                 <a href="" class="ovfont notice-text">
-                                    <div>기타 공지 입니다.</div>    
+                                    <div>기타 공지 입니다.</div>
                                 </a>
                             </div>
                             <div class="notice-others">
                                 <div class="notice-symbol ovfont">공지</div>
                                 <a href="" class="ovfont notice-text">
-                                    <div>기타 공지 입니다.</div>    
+                                    <div>기타 공지 입니다.</div>
                                 </a>
                             </div>
                             <div class="notice-others-last">
                                 <div class="notice-symbol ovfont">공지</div>
-                                 <a href="" class="ovfont notice-text">
-                                    <div>기타 공지 입니다.</div>    
+                                <a href="" class="ovfont notice-text">
+                                    <div>기타 공지 입니다.</div>
                                 </a>
                             </div>
                         </div>
@@ -256,8 +347,8 @@
                     </div>
                 </div>
                 <div class="content-box2 flex">
-                    <div id="board3">
-
+                    <div id="board3" class="ovfont">
+                        광고배너입니다.
                     </div>
                     <div id="board4" class="ovfont">
                         <a href="">버그악용/불법 프로그램 신고</a>
@@ -272,7 +363,37 @@
         </div><!--board end-->
 
         <div id="footer" class="bg-color-dark">
-             
+            <div class="footer-left">
+                <div class="footer-left-top ovfont">
+                    <div class="footertext"><a href="">회사소개</a></div>
+                    <div class="footertext"><a href="">채용안내</a></div>
+                    <div class="footertext"><a href="">이용약관</a></div>
+                    <div class="footertext"><a href="">게임이용등급안내</a></div>
+                    <div class="footertext"><a href="">개인정보처리방침</a></div>
+                    <div class="footertext"><a href="">청소년보호정책</a></div>
+                    <div class="footertext"><a href="">운영정책</a></div>
+                    <div class="footertext"><a href="">블리자드pc방</a></div>
+                    <div class="footertext lastborder"><a href="">사이트맵</a></div>
+
+                </div>
+                <div class="footer-left-center">
+                    <div class="footer-left-center-text1 ovfont">
+                        <div>블리자드 엔터테인먼트 유한 회사
+                        주소: 06164 서울시 강남구 테헤란로 521 파르나스타워 15층
+                        대표 번호: 1644-0727 | 팩스 번호: (02)544-3038 | 이메일: websupport@blizzard.co.kr</div>
+                        <div>사업자 등록 번호: 211-87-49910 | 통신 판매업 신고 번호: 강남-6017호 | 사업자정보확인
+                        대표이사: 다니엘 알레그레 | 개인정보 보호책임자: 이강호</div>
+                    </div>
+                    <div class="footer-left-center-text2 ovfont">
+                        ©2022 Blizzard Entertainment, Inc. 모든 권리는 Blizzard Entertainment에 있습니다.
+                        여기서 언급된 다른 모든 상표 는 각 소유권자들의 자산입니다.
+                    </div>
+                </div>
+                <div class="footer-left-bottom"></div>
+            </div>
+            <div class="footer-right">
+
+            </div>
 
 
         </div><!--footer end-->
