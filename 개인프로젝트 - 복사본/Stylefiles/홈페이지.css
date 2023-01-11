@@ -1,0 +1,54 @@
+@import url(//db.onlinewebfonts.com/c/1f00b50091b5a28cccf7b552ceefc8cd?family=Koverwatch);
+
+/*오버워치 폰트*/
+body {
+    font-family: 'Koverwatch', Koverwatch;
+    box-sizing: border-box;
+}
+
+.login, .back {
+    width: 200px;
+    height: 200px;
+   
+    background-image: url(../sourcefiles/image/완성.gif);
+    background-color: rgb(173, 82, 21);
+    background-position: center;
+    background-size: 500px 350px;  
+    border-radius: 200px;
+    
+    border-width: 0.001px;
+    border-style: solid;
+    border-color: #1557ad;
+
+}
+
+.login>.text{
+    margin-top: 60px;
+    
+    color: rgb(243, 200, 6);
+    font-size: 35px;
+    text-decoration-thickness: bold;
+    text-shadow: 2px 2px 3px rgba(32, 31, 31, 0.822);
+    text-align: center;
+    text-decoration: none;
+}
+
+.login:hover {
+
+    cursor: pointer;
+    background-image: url(../sourcefiles/image/플레이버튼대비.gif);
+    background-position: center;
+    background-size: 500px 350px; 
+    transition-duration: 2s;
+}
+.login:hover>.text{
+    font-size: 36px;
+    color:  white;
+}
+.test{
+    width:100%;
+    min-width: 1124px;
+    height: 62px;
+    background-color: aquamarine;
+}
+
