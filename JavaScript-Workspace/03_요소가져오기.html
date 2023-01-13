@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소 가져오기</title>
+    <style>
+        .area {
+            border: 1px solid black;
+            width: 300px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HTML요소에 접근하기(해당 요소객체를 가져오기)</h1>
+    <h3>1) 아이디로 접근하기</h3>
+    <div id="area1" class="area"></div>
+    <button onclick="accessId();">아이디로 접근</button>
+    <script>
+        function accessId() {
+            //아이디로 요소에 접근할때
+            // document.getElementById("아이디명");
+            let area1 = document.getElementById("area1");
+            //선택된 요소에 속성들에 접근해서 값을 가져온다거나 변경가능.
+            //속성에 접근하고자 한다면 => 선택된 요소. 접근하고자하는 속성명
+            area1.innerHTML += "아이디로 접근성공!<br>";
+            //선택된 요소에 스타일변경
+            area1.style.backgroundColor = "pink";
+            area1.style.color = "red";
+            area1.style.width = "100px";
+            area1.style.height = "300px";
+        }
+    </script>
+
+    <br><br>
+
+    <div id="area2" class="area" style="background-color: red;"></div>
+    <button onclick="accessId2();">클릭할때마다 색변경</button>
+    <script>
+        function accessId2() {
+            let area2 = document.getElementById("area2");
+            console.log(area2.style.backgroundColor);
+
+            if (area2.style.backgroundColor == "red") {
+                area2.style.backgroundColor = "blue";
+
+            } else {
+                area2.style.backgroundColor = "red";
+            }
+
+    </script>
+    <br><br>
+    <h3>2)태그명으로 접근하기</h3>
+    <ul>
+        <li>목록1</li>
+        <li>목록2</li>
+        <li>목록3</li>
+        <li>목록4</li>
+        <li>목록5</li>
+    </ul>
+    <button onclick="accessTagName();">태그명으로 접근</button>
+    <script>
+        function accessTagName(){
+            //태그명으로 요소에 접근
+            //document.getElementsByTagName("태그명")
+            //=>선택된 여러개의 요소객체들은 배열에 담겨서 반환.
+            //자바스크립트에서 배열은 []로 표현됨.
+            document.getElementsByTagName("li");
+        }
+        
+        
+        
+        
+        
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
