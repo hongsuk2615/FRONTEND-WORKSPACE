@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습문제1</title>
+</head>
+
+<body>
+    <h1>Practice1</h1>
+    <fieldset>
+        <legend>취미</legend>
+        <form action="">
+            <input type="checkbox" id="selectAll" name="hobby" onclick="checkedAll();">
+            <label for="selectAll">전체선택</label>
+            <input type="checkbox" id="종합" name="hobby" onclick="checkhobby();">
+            <label for="종합">종합</label>
+            <input type="checkbox" id="소설" name="hobby" onclick="checkhobby();">
+            <label for="소설">소설</label>
+            <input type="checkbox" id="시/에세이" name="hobby" onclick="checkhobby();">
+            <label for="시/에세이">시/에세이</label>
+            <input type="checkbox" id="경제/경영" name="hobby" onclick="checkhobby();">
+            <label for="경제/경영">경제/경영</label>
+            <input type="checkbox" id="자기계발" name="hobby" onclick="checkhobby();">
+            <label for="자기계발">자기계발</label>
+            <input type="checkbox" id="아동" name="hobby" onclick="checkhobby();">
+            <label for="아동">아동</label>
+            <br>
+            <input type="checkbox" id="여행" name="hobby" style="margin-left: 99px;" onclick="checkhobby();">
+            <label for="여행">여행</label>
+            <input type="checkbox" id="과학" name="hobby" onclick="checkhobby();">
+            <label for="과학">과학</label>
+            <input type="checkbox" id="역사/문화" name="hobby" onclick="checkhobby();">
+            <label for="역사/문화">역사/문화</label>
+            <input type="checkbox" id="외국어" name="hobby" onclick="checkhobby();">
+            <label for="외국어" style="margin-right: 23px;">외국어</label>
+            <input type="checkbox" id="컴퓨터" name="hobby" onclick="checkhobby();">
+            <label for="컴퓨터" style="margin-right: 15px;">컴퓨터</label>
+            <input type="checkbox" id="만화" name="hobby" onclick="checkhobby();">
+            <label for="만화">만화</label>
+        </form>
+    </fieldset>
+    <br>
+    <button onclick="hobbyResult();">카테고리선택</button>
+    <div id="hobby-result" style="border : 1px solid red; height: 200px;">
+    </div>
+    <script>
+        let hobbys = document.getElementsByName('hobby');
+        function checkedAll() {  //전체선택 체크박스 동작
+
+            if (document.getElementById('selectAll').checked) {
+                for (let i = 0; i < hobbys.length; i++) {
+                    hobbys[i].checked = true;
+                }
+            } else {
+                for (let i = 0; i < hobbys.length; i++) {
+                    hobbys[i].checked = false;
+                }
+            }
+        }
+
+        function checkhobby() { //전체선택 체크박스 제외 체크박스 동작
+            let isCheckedAll = true;
+            for (let i = 1; i < hobbys.length; i++) {
+                if (!hobbys[i].checked) {
+                    isCheckedAll = false;
+                }
+            }
+            document.getElementById('selectAll').checked = isCheckedAll;
+        }
+
+        function hobbyResult() { // 카테고리선택버튼 동작
+            document.getElementById('hobby-result').innerHTML = "";
+            for (let i = 1; i < hobbys.length; i++) {
+                if(hobbys[i].checked)
+                document.getElementById('hobby-result').innerHTML += hobbys[i].id + " "; 
+            }
+        }
+
+
+    </script>
+
+</body>
+
+</html>

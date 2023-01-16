@@ -15,7 +15,7 @@ div {
 }
 
 .justify-content-test {
-    justify-content: space-around;
+    justify-content: space-;
 }
 
 .flex-content-test {
@@ -42,7 +42,7 @@ div {
 }
 
 .flex-wrap-test {
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 
 .flex-flow-test {
@@ -52,9 +52,8 @@ div {
 }
 
 .align-content-test {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    /* align-items: space-between; */
-    align-content: center;
+    align-items: space-between;
     height : 300px;
 }
